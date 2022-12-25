@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: porfolio.whattheearl.com
+  - host: portfolio.whattheearl.com
     http:
       paths:
       - path: /
@@ -14,4 +14,4 @@ spec:
           service:
             name: porfolio-service
             port:
-              number: 8080
+              number: 80

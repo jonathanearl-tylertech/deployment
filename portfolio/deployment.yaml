@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: porfolio-deployment
-  labels:
-    app: porfolio
+  name: porfolio-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: porfolio
+      app: porfolio-server
   template:
     metadata:
       labels:
-        app: porfolio
+        app: porfolio-server
     spec:
       containers:
-      - name: porfolio
-        image: ghcr.io/whattheearl/porfolio:0.0.1
+      - name: porfolio-server
+        image: ghcr.io/whattheearl/porfolio:0.0.2
         ports:
         - containerPort: 80
