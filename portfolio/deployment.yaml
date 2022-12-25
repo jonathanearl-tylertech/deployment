@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: porfolio-server
-        image: ghcr.io/whattheearl/porfolio:0.0.2
+        image: ghcr.io/whattheearl/porfolio:0.0.4
         ports:
         - containerPort: 80
